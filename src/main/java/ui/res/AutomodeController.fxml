@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="620.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controllers.AutomodeController">
+<AnchorPane prefHeight="700.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controllers.AutomodeController">
     <children>
         <TableView fx:id="tableSources" layoutX="11.0" layoutY="14.0" prefHeight="422.0" prefWidth="808.0">
             <columns>
@@ -25,9 +25,9 @@
                 <TableColumn fx:id="disp5Col" prefWidth="116.79998779296875" text="Дисперсия T(обсл)" />
             </columns>
         </TableView>
-        <TableView fx:id="devicesTable" layoutX="14.0" layoutY="442.0" prefHeight="163.0" prefWidth="400.0">
+        <TableView fx:id="devicesTable" layoutX="14.0" layoutY="442.0" prefHeight="200.0" prefWidth="400.0">
             <columns>
-                <TableColumn fx:id="deviceColumn" prefWidth="94.19997882843018" text="Приборы" />
+                <TableColumn fx:id="deviceColumn" prefWidth="150.19997882843018" text="Приборы" />
                 <TableColumn fx:id="coefColumn" prefWidth="307.40003967285156" text="Коэффициент использования" />
             </columns>
         </TableView>

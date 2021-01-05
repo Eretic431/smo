@@ -13,7 +13,7 @@ public class Controller {
     private int devicePointer;
 
     private Buffer buffer;
-    private RequestManager sourceManager;
+    private RequestsManager sourceManager;
     private DevicesManager deviceManager;
     private final Consumer<Object> infoCollector;
 
@@ -45,12 +45,11 @@ public class Controller {
         double beta = Config.BETA;
         requestsNumber = Config.REQUESTS_NUMBER;
         currentTime = 0;
-        sourceManager = new RequestManager(sourceCount, alpha, beta);
+        sourceManager = new RequestsManager(sourceCount, alpha, beta);
         deviceManager = new DevicesManager(deviceCount, Config.LAMBDA);
         buffer = new Buffer(bufferSize);
 
     }
-
 
     private void checkFreeDevices() {
         List<DoneRequest> doneRequests = deviceManager.getDoneRequestsWithDevices(currentTime);

@@ -3,15 +3,15 @@ package app;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RequestManager {
+public class RequestsManager {
     private final Source[] sources;
     private final Request[] sourcesRequests;
     private final double[] timesToWait;
     private int counter = 0;
 
-    public RequestManager(final int amountOfSources,
-                          final double alpha,
-                          final double beta) {
+    public RequestsManager(final int amountOfSources,
+                           final double alpha,
+                           final double beta) {
         this.sources = new Source[amountOfSources];
         this.sourcesRequests = new Request[amountOfSources];
         this.timesToWait = new double[amountOfSources];

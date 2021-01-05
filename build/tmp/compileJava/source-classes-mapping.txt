@@ -10,23 +10,23 @@ ui/Controllers/StatisticFromSources.java
  ui.Controllers.StatisticFromSources
 app/Config.java
  app.Config
-app/RequestManager.java
- app.RequestManager
-app/Request.java
- app.Request
-app/DoneRequest.java
- app.DoneRequest
 app/DevicesManager.java
  app.DevicesManager
 app/Buffer.java
  app.Buffer
+app/Request.java
+ app.Request
+app/DoneRequest.java
+ app.DoneRequest
 app/Controller.java
  app.Controller
 app/Main.java
  app.Main
-ui/Controllers/MainController.java
- ui.Controllers.MainController
+app/RequestsManager.java
+ app.RequestsManager
 ui/Controllers/AutomodeController.java
  ui.Controllers.AutomodeController
+ui/Controllers/MainController.java
+ ui.Controllers.MainController
 ui/App.java
  ui.App

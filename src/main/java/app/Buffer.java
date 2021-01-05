@@ -89,11 +89,11 @@ public class Buffer {
         if (isEmpty()) {
             System.out.println("empty");
         } else {
-            int highestSourceNum = requests.get(0).getSourceNumber();
-            for (int i = 1; i < requests.size(); i++) {
-                if (requests.get(i) != null) {
-                    if (requests.get(i).getSourceNumber() < highestSourceNum) {
-                        highestSourceNum = requests.get(i).getSourceNumber();
+            int highestSourceNum = Integer.MAX_VALUE;
+            for (Request request : requests) {
+                if (request != null) {
+                    if (request.getSourceNumber() < highestSourceNum) {
+                        highestSourceNum = request.getSourceNumber();
                     }
                 }
             }
@@ -108,17 +108,21 @@ public class Buffer {
             }
 
             Iterator<Integer> indexIt = indexes.iterator();
-            int currIndex = indexIt.next();
+            int currIndex = -1;
+            if (indexIt.hasNext()) {
+                currIndex = indexIt.next();
+            } else {
+                return null;
+            }
             while (indexIt.hasNext()) {
                 int nextIndex = indexIt.next();
                 if (requests.get(nextIndex).getTimeInBuffer() > requests.get(currIndex).getTimeInBuffer()) {
                     currIndex = nextIndex;
                 }
             }
-            
+
             Request last = requests.get(currIndex);
             requests.set(currIndex, null);
-            System.out.println(currIndex);
             return last;
         }
 
