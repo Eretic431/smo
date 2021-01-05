@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="829.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controllers.AutomodeController">
+    <children>
+        <TableView fx:id="tableSources" layoutX="11.0" layoutY="14.0" prefHeight="422.0" prefWidth="808.0">
+            <columns>
+                <TableColumn fx:id="sourceColumn" prefWidth="83.59997272491455" text="Источники" />
+                <TableColumn fx:id="countColumn" prefWidth="111.20002746582031" text="Всего заявок" />
+                <TableColumn fx:id="rejectColumn" prefWidth="71.199951171875" text="P(отк)" />
+                <TableColumn fx:id="inSystemColumn" prefWidth="110.4000244140625" text="T(сист)" />
+                <TableColumn fx:id="waitingColumn" prefWidth="87.0" text="T(ож)" />
+                <TableColumn fx:id="onDeviceColumn" minWidth="0.0" prefWidth="112.00003051757812" text="T(обсл)" />
+                <TableColumn fx:id="disp4Col" prefWidth="114.5999755859375" text="Дисперсия T(ож)" />
+                <TableColumn fx:id="disp5Col" prefWidth="116.79998779296875" text="Дисперсия T(обсл)" />
+            </columns>
+        </TableView>
+        <TableView fx:id="devicesTable" layoutX="14.0" layoutY="442.0" prefHeight="163.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="deviceColumn" prefWidth="94.19997882843018" text="Приборы" />
+                <TableColumn fx:id="coefColumn" prefWidth="307.40003967285156" text="Коэффициент использования" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="609.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controllers.MainController">
+    <children>
+        <Label layoutX="43.0" layoutY="94.0" text="количество источников" />
+        <Label layoutX="43.0" layoutY="141.0" text="количество приборов" />
+        <TextField fx:id="bufferSizeText" layoutX="300.0" layoutY="237.0" text="10" />
+        <TextField fx:id="alpha" layoutX="300.0" layoutY="296.0" text="0.9" />
+        <TextField fx:id="sourceNumber" layoutX="300.0" layoutY="88.0" text="13" />
+        <TextField fx:id="deviceNumber" layoutX="300.0" layoutY="135.0" text="5" />
+        <TextField fx:id="requestsNum" layoutX="300.0" layoutY="185.0" text="50" />
+        <TextField fx:id="lambda" layoutX="300.0" layoutY="350.0" text="1.2" />
+        <Label layoutX="41.0" layoutY="191.0" text="размер буфера" />
+        <Label layoutX="43.0" layoutY="243.0" text="альфа для приборов" />
+        <Label layoutX="43.0" layoutY="302.0" text="бета для приборов" />
+        <Label layoutX="43.0" layoutY="356.0" text="лямбда" />
+        <Button fx:id="startButton" layoutX="258.0" layoutY="473.0" mnemonicParsing="false" onAction="#startModulating" prefHeight="57.0" prefWidth="158.0" text="Начать">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

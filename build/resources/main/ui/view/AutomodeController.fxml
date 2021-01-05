@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controllers.AutomodeController">
+    <children>
+        <TableView fx:id="tableSources" layoutX="11.0" layoutY="14.0" prefHeight="340.0" prefWidth="1280.0">
+            <columns>
+                <TableColumn fx:id="sourceColumn" prefWidth="83.59997272491455" text="Источники" />
+                <TableColumn fx:id="countColumn" prefWidth="111.20002746582031" text="Всего заявок" />
+                <TableColumn fx:id="rejectColumn" prefWidth="71.199951171875" text="P(отк)" />
+                <TableColumn fx:id="inSystemColumn" prefWidth="200.4000244140625" text="T(вс)" />
+                <TableColumn fx:id="waitingColumn" prefWidth="200.0" text="T(ож)" />
+                <TableColumn fx:id="onDeviceColumn" minWidth="200.0" prefWidth="112.00003051757812" text="T(обсл)" />
+                <TableColumn fx:id="disp4Col" prefWidth="200.5999755859375" text="Дисперсия T(ож)" />
+                <TableColumn fx:id="disp5Col" prefWidth="200.79998779296875" text="Дисперсия T(обсл)" />
+            </columns>
+        </TableView>
+        <TableView fx:id="devicesTable" layoutX="33.0" layoutY="370.0" prefHeight="193.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="deviceColumn" prefWidth="94.19997882843018" text="Приборы" />
+                <TableColumn fx:id="coefColumn" prefWidth="250.40003967285156" text="Коэффициент использования" />
+            </columns>
+        </TableView>
+        <Label layoutX="493.0" layoutY="370.0" prefHeight="36.0" prefWidth="500.0" text="Буффер после окончания:" textOverrun="CLIP">
+            <font>
+                <Font size="17.0" />
+            </font></Label>
+        <TextArea fx:id="bufferText" layoutX="493.0" layoutY="409.0" prefHeight="76.0" prefWidth="370.0">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </TextArea>
+    </children>
+</AnchorPane>
